@@ -1,0 +1,6 @@
+{
+  "name": "Pet Care",
+  "description": "Aplicativo web moderno e minimalista para tutores gerenciarem a saúde, vacinas, consultas e lembretes dos seus animais de estimação.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

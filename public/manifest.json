@@ -1,0 +1,23 @@
+{
+  "short_name": "Pet Care",
+  "name": "Pet Care - Gerenciador de Animais de Estimação",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=192&auto=format&fit=crop&q=80",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=512&auto=format&fit=crop&q=80",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "description": "Gerencie a saúde, vacinas, consultas e lembretes dos seus pets de forma simples e rápida."
+}

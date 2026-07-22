@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-natural-bg: #FAF9F6;
+  --color-natural-card: #FFFFFF;
+  --color-natural-border: #E8E6DF;
+  --color-natural-border-subtle: #F3F1ED;
+  --color-natural-text: #2D2B26;
+  --color-natural-body: #3D3B36;
+  --color-natural-muted: #7A776D;
+  --color-natural-light: #A19E95;
+
+  /* Sage Green Palette */
+  --color-sage-50: #F0F4EF;
+  --color-sage-100: #E9EDC9;
+  --color-sage-200: #CCD5AE;
+  --color-sage-300: #9EB696;
+  --color-sage-500: #7D9B76;
+  --color-sage-600: #6B8664;
+  --color-sage-700: #556D4F;
+  --color-sage-900: #2C3D29;
+
+  /* Terracotta Palette */
+  --color-terracotta-50: #FFF9F5;
+  --color-terracotta-100: #F9F1EB;
+  --color-terracotta-200: #EFDED0;
+  --color-terracotta-300: #E5C3A3;
+  --color-terracotta-500: #D4A373;
+  --color-terracotta-600: #C28E5E;
+  --color-terracotta-700: #A27245;
+}
+
+body {
+  background-color: #FAF9F6;
+  color: #3D3B36;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.dark body {
+  background-color: #0F172A;
+  color: #F8FAFC;
+}
+
+/* Minimalist Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(161, 158, 149, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(161, 158, 149, 0.5);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(161, 158, 149, 0.3) transparent;
+}
+
+.dark * {
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 16s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+

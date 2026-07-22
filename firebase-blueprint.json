@@ -1,0 +1,73 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "User profiles storing preferences and basic information",
+      "properties": {
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["email"]
+    },
+    "pets": {
+      "title": "Pet",
+      "description": "Pet details stored inside user document subcollection",
+      "properties": {
+        "name": { "type": "string" },
+        "species": { "type": "string" },
+        "breed": { "type": "string" },
+        "sex": { "type": "string" },
+        "birthDate": { "type": "string" },
+        "weight": { "type": "number" },
+        "color": { "type": "string" },
+        "microchip": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "observacoesMedicas": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["name", "species"]
+    },
+    "vacinas": {
+      "title": "Vaccine Record",
+      "description": "Vaccination records for a specific pet",
+      "properties": {
+        "nome": { "type": "string" },
+        "dataAplicacao": { "type": "string" },
+        "proximaDose": { "type": "string" },
+        "observacoes": { "type": "string" }
+      },
+      "required": ["nome", "dataAplicacao"]
+    },
+    "consultas": {
+      "title": "Vet Visit Record",
+      "description": "Veterinary consultation records",
+      "properties": {
+        "data": { "type": "string" },
+        "veterinario": { "type": "string" },
+        "clinica": { "type": "string" },
+        "motivo": { "type": "string" },
+        "diagnostico": { "type": "string" },
+        "tratamento": { "type": "string" },
+        "medicamentos": { "type": "string" },
+        "observacoes": { "type": "string" }
+      },
+      "required": ["data", "motivo"]
+    },
+    "lembretes": {
+      "title": "Reminder Record",
+      "description": "Care reminders for pets",
+      "properties": {
+        "titulo": { "type": "string" },
+        "categoria": { "type": "string" },
+        "data": { "type": "string" },
+        "hora": { "type": "string" },
+        "descricao": { "type": "string" },
+        "notificacaoAtiva": { "type": "boolean" },
+        "concluido": { "type": "boolean" }
+      },
+      "required": ["titulo", "categoria", "data"]
+    }
+  }
+}
